@@ -1,0 +1,328 @@
+/****  BASIC ELEMENTS  ***********************************/
+
+html,body{
+    overflow: hidden; 
+    height  : 100%; 
+    margin  : 0; 
+    padding : 0; 
+}
+
+body{
+    color: #333;
+    background: #FFF; 
+    font: normal 1em/1.4 'helvetica neue',sans-serif;
+    display: box;
+    box-orient: vertical;
+    box-flex: 1;
+}
+
+a                { color: #333; }
+a:hover          { color: #666; }
+a:active         { color: #800; }
+a:visited        { color: #333; }
+a:visited:hover  { color: #666; }
+a:visited:active { color: #800; }
+
+a { text-decoration: none; }
+li{ list-style: none; }
+
+
+
+
+/****  HEADER / FOOTER  **********************************/
+
+header{
+    overflow: hidden;
+    border-top:1px solid #737373;
+    border-bottom:1px solid #292929;
+    background: linear-gradient(top,#505050,#1b1b1b);
+}
+
+header h5{
+    float: right;
+    display: inline-block;
+    margin: 8px 10px 0 0;
+    color: #c8c8c8;
+    text-shadow:0 -1px 1px #000;
+}
+
+header h3{
+    float: left;
+    display: inline-block;
+    margin: 0;
+    padding: 4px 10px 2px;
+    color: #c8c8c8;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow:0 -1px 1px #000;
+}
+
+header button{
+    display: inline-block;
+    margin-top: 4px;
+    padding: 4px 20px;
+    color: #DDD;
+    border: 1px solid #222;
+    border-bottom: 1px solid #444;
+    border-radius: 6px;
+    text-shadow: 0 -1px 1px #000;
+    cursor: pointer;
+    background: linear-gradient(#555,#222);
+}
+
+header button:hover{
+    color: #FFF;
+    background: linear-gradient(#505050,#202020);
+}
+
+header button:active{
+    color: #EEE;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+}
+
+#prevday{
+    margin-left: 60px;
+}
+
+footer{
+    clear     : both;
+    background: linear-gradient(top,#505050,#1b1b1b);
+}
+
+footer p{
+    margin   : 0;
+    padding  : 4px 10px;
+    color    : #aaa;
+    font-size: 0.7em;
+}
+
+
+
+
+/****  MAIN CONTENT  *************************************/
+
+section{
+    background: #fff;
+    overflow: hidden;
+    display: box;
+    box-orient: horizontal;
+    box-flex: 1;
+}
+
+nav{
+    overflow: scroll;
+    width: 300px;
+    background: #eee;
+    border-right: 4px solid #222;
+    background-size : 5px 5px;
+    background-image: linear-gradient(rgba(255, 255, 255, .3) 50%, transparent 50%, transparent);
+    box-sizing: border-box;
+}
+
+nav h5{
+    padding: 10px 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+#main{
+    overflow: scroll;
+    box-flex: 1;
+    box-sizing: border-box;
+}
+
+
+.list-day li{
+    clear: both;
+    overflow: hidden;
+    min-height: 50px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.8em;
+    display: box;
+    box-orient: horizontal;
+    box-flex: 1;
+}
+
+.list-day li h3{
+    width: 60px;
+    margin: 0;
+    padding: 8px 6px;
+    background: #ddd;
+    font-size: 0.8em;
+    font-weight: normal;
+    text-align: right;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #ccc;
+    display: box;
+    box-pack: end;
+}
+
+.edit{
+    margin: 0;
+    padding: 6px;
+    box-flex: 1;
+    user-modify: read-write-plaintext-only;
+}
+
+.edit:focus{
+    background: #FFE;
+}
+
+
+
+
+/****  CALENDAR  *****************************************/
+
+.cal{width: 100%; margin: 0em; float: left; background: #fff; border-collapse: collapse; border: 1px solid #ccc; font-size: 0.8em;}
+.cal th{width: 14.2%; height: 25px; text-align: center; border: 1px solid #ccc; font-size: 0.8em; font-weight: normal;}
+.cal td{width: 14.2%; height: 25px; text-align: right;  border: 1px solid #ccc; font-size: 0.9em; vertical-align: top; cursor:pointer;}
+.cal td:hover{background:#ddd;}
+.cal td.hi{color: #000;}
+.cal td.lo{color: #666; background: #f6f6f6;}
+.cal td.ho{color: #A00;}
+.cal td.to{background: #ECC;}
+
+.caption{font-size: 2em; color: #333; background: #AAA; text-shadow: -1px -1px 1px #EEE;}
+.caption{background: #DEC;}
+.caption a{font-size: 1.5em; font-weight: bold;}
+
+#prevmonth{display: inline-block; padding-bottom: 1px; transform:rotate(180deg);}
+#thismonth{display: inline-block; width: 180px; margin: 0 10px;}
+#nextmonth{display: inline-block;}
+
+
+
+
+/****  CSS4 / REMOVE SOMEDAY *****************************/
+
+body{
+    display: -webkit-box;
+    display:    -moz-box;
+    display:     -ms-box;
+    display:      -o-box;
+    -webkit-box-orient: vertical;
+       -moz-box-orient: vertical;
+        -ms-box-orient: vertical;
+         -o-box-orient: vertical;
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-box-flex: 1;
+         -o-box-flex: 1;
+}
+
+header{
+    background: -webkit-linear-gradient(top,#505050,#1b1b1b);
+    background:    -moz-linear-gradient(top,#333,#000);
+    background:     -ms-linear-gradient(top,#333,#000);
+    background:      -o-linear-gradient(top,#333,#000);
+}
+
+
+header button{
+    background: -webkit-linear-gradient(#555,#222);
+    background:    -moz-linear-gradient(#444,#222);
+    background:     -ms-linear-gradient(#444,#222);
+    background:      -o-linear-gradient(#444,#222);
+}
+
+header button:hover{
+    background: -webkit-linear-gradient(#505050,#202020);
+    background:    -moz-linear-gradient(#555,#333);
+    background:     -ms-linear-gradient(#555,#333);
+    background:      -o-linear-gradient(#555,#333);
+}
+
+section{
+    display: -webkit-box;
+    display:    -moz-box;
+    display:     -ms-box;
+    display:      -o-box;
+    -webkit-box-orient: horizontal;
+       -moz-box-orient: horizontal;
+        -ms-box-orient: horizontal;
+         -o-box-orient: horizontal;
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-box-flex: 1;
+         -o-box-flex: 1;
+}
+
+nav{
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .3) 50%, transparent 50%, transparent);
+    background-image:    -moz-linear-gradient(rgba(255, 255, 255, .3) 50%, transparent 50%, transparent);
+    background-image:     -ms-linear-gradient(rgba(255, 255, 255, .3) 50%, transparent 50%, transparent);
+    background-image:      -o-linear-gradient(rgba(255, 255, 255, .3) 50%, transparent 50%, transparent);
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+}
+
+#main{
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-box-flex: 1;
+         -o-box-flex: 1;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+}
+
+
+.list-day li{
+    display: -webkit-box;
+    display:    -moz-box;
+    display:     -ms-box;
+    display:      -o-box;
+    -webkit-box-orient: horizontal;
+       -moz-box-orient: horizontal;
+        -ms-box-orient: horizontal;
+         -o-box-orient: horizontal;
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-box-flex: 1;
+         -o-box-flex: 1;
+}
+
+.list-day li h3{
+    display: -webkit-box;
+    display:    -moz-box;
+    display:     -ms-box;
+    display:      -o-box;
+    -webkit-box-pack: end;
+       -moz-box-pack: end;
+        -ms-box-pack: end;
+         -o-box-pack: end;
+}
+
+.edit{
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-box-flex: 1;
+         -o-box-flex: 1;
+    -webkit-user-modify:  read-write-plaintext-only;
+       -moz-user-modify:  read-write-plaintext-only;
+        -ms-user-modify:  read-write-plaintext-only;
+         -o-user-modify:  read-write-plaintext-only;
+}
+
+#prevmonth{
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+}
+
+footer{
+    background: -webkit-linear-gradient(top,#505050,#1b1b1b);
+    background:    -moz-linear-gradient(top,#333,#000);
+    background:     -ms-linear-gradient(top,#333,#000);
+    background:      -o-linear-gradient(top,#333,#000);
+}
+
+
+
+/****  END OF DOCUMENT ***********************************/

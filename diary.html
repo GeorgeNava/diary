@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Own Diary</title>
+<link rel="stylesheet" href="/static/diary.css">
+</head>
+<body>
+
+<header>
+    <h3>What have I done today?</h3>
+    <button id="prevday" onclick="prevDay()">Prev</button>
+    <button id="gotoday" onclick="thisDay()">Today</button>
+    <button id="nextday" onclick="nextDay()">Next</button>
+    <h5 id="today">Wednesday 26th, September 2012</h5>
+</header>
+
+<section>
+
+<nav>
+ 
+<table class="cal" onclick="clickDay(this)">
+  <tbody>
+    <tr>
+        <th class="caption" colspan="7">
+            <a href="#" id="prevmonth" onclick="return prevMonth()">&#10153;</a>
+            <a href="#" id="thismonth" onclick="return thisMonth()">September &bull; 2012</a>
+            <a href="#" id="nextmonth" onclick="return nextMonth()">&#10153;</a>
+        </th>
+    </tr>
+    <tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
+    <tr><td id="d00" class="hi ho"> 1</td><td id="d01" class="hi"> 2</td><td id="d02" class="hi"> 3</td><td id="d03" class="hi"> 4</td><td id="d04" class="hi"> 5</td><td id="d05" class="hi"> 6</td><td id="d06" class="hi ho"> 7</td></tr>
+    <tr><td id="d07" class="hi ho"> 8</td><td id="d08" class="hi"> 9</td><td id="d09" class="hi">10</td><td id="d10" class="hi">11</td><td id="d11" class="hi">12</td><td id="d12" class="hi">13</td><td id="d13" class="hi ho">14</td></tr>
+    <tr><td id="d14" class="hi ho">15</td><td id="d15" class="hi">16</td><td id="d16" class="hi">17</td><td id="d17" class="hi">18</td><td id="d18" class="hi">19</td><td id="d19" class="hi">20</td><td id="d20" class="hi ho">21</td></tr>
+    <tr><td id="d21" class="hi ho">22</td><td id="d22" class="hi">23</td><td id="d23" class="hi">24</td><td id="d24" class="hi">25</td><td id="d25" class="hi">26</td><td id="d26" class="hi">27</td><td id="d27" class="hi ho">28</td></tr>
+    <tr><td id="d28" class="hi ho">29</td><td id="d29" class="hi">30</td><td id="d30" class="hi">31</td><td id="d31" class="lo"> 1</td><td id="d32" class="lo"> 2</td><td id="d33" class="lo"> 3</td><td id="d34" class="lo ho"> 4</td></tr>
+    <tr><td id="d35" class="lo ho"> 5</td><td id="d36" class="lo"> 6</td><td id="d37" class="lo"> 7</td><td id="d38" class="lo"> 8</td><td id="d39" class="lo"> 9</td><td id="d40" class="lo">10</td><td id="d41" class="lo ho">11</td></tr>
+  </tbody>
+</table>
+
+
+</nav>
+
+<div id="main">
+
+<div class="list-day">
+<li><h3>12.00am</h3><p class="edit" id="201206180000" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 1.00am</h3><p class="edit" id="201206180100" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 2.00am</h3><p class="edit" id="201206180200" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 3.00am</h3><p class="edit" id="201206180300" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 4.00am</h3><p class="edit" id="201206180400" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 5.00am</h3><p class="edit" id="201206180500" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 6.00am</h3><p class="edit" id="201206180600" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 7.00am</h3><p class="edit" id="201206180700" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 8.00am</h3><p class="edit" id="201206180800" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 9.00am</h3><p class="edit" id="201206180900" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3>10.00am</h3><p class="edit" id="201206181000" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3>11.00am</h3><p class="edit" id="201206181100" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3>12.00pm</h3><p class="edit" id="201206181200" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 1.00pm</h3><p class="edit" id="201206181300" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 2.00pm</h3><p class="edit" id="201206181400" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 3.00pm</h3><p class="edit" id="201206181500" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 4.00pm</h3><p class="edit" id="201206181600" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 5.00pm</h3><p class="edit" id="201206181700" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 6.00pm</h3><p class="edit" id="201206181800" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 7.00pm</h3><p class="edit" id="201206181900" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 8.00pm</h3><p class="edit" id="201206182000" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3> 9.00pm</h3><p class="edit" id="201206182100" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3>10.00pm</h3><p class="edit" id="201206182200" onfocus="cache(this)" onblur="save(this)"></p></li>
+<li><h3>11.00pm</h3><p class="edit" id="201206182300" onfocus="cache(this)" onblur="save(this)"></p></li>
+</div>
+
+</div><!-- main -->
+
+</section>
+
+<footer><p>&copy;2012 • My Own Diary • George Nava</p></footer>
+
+<script src="/static/diary.js"></script>
+
+</body>
+</html>
