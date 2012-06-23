@@ -214,24 +214,24 @@ body{
 
 header{
     background: -webkit-linear-gradient(top,#505050,#1b1b1b);
-    background:    -moz-linear-gradient(top,#333,#000);
-    background:     -ms-linear-gradient(top,#333,#000);
-    background:      -o-linear-gradient(top,#333,#000);
+    background:    -moz-linear-gradient(top,#505050,#1b1b1b);
+    background:     -ms-linear-gradient(top,#505050,#1b1b1b);
+    background:      -o-linear-gradient(top,#505050,#1b1b1b);
 }
 
 
 header button{
     background: -webkit-linear-gradient(#555,#222);
-    background:    -moz-linear-gradient(#444,#222);
-    background:     -ms-linear-gradient(#444,#222);
-    background:      -o-linear-gradient(#444,#222);
+    background:    -moz-linear-gradient(#555,#222);
+    background:     -ms-linear-gradient(#555,#222);
+    background:      -o-linear-gradient(#555,#222);
 }
 
 header button:hover{
     background: -webkit-linear-gradient(#505050,#202020);
-    background:    -moz-linear-gradient(#555,#333);
-    background:     -ms-linear-gradient(#555,#333);
-    background:      -o-linear-gradient(#555,#333);
+    background:    -moz-linear-gradient(#505050,#202020);
+    background:     -ms-linear-gradient(#505050,#202020);
+    background:      -o-linear-gradient(#505050,#202020);
 }
 
 section{
@@ -318,9 +318,9 @@ nav{
 
 footer{
     background: -webkit-linear-gradient(top,#505050,#1b1b1b);
-    background:    -moz-linear-gradient(top,#333,#000);
-    background:     -ms-linear-gradient(top,#333,#000);
-    background:      -o-linear-gradient(top,#333,#000);
+    background:    -moz-linear-gradient(top,#505050,#1b1b1b);
+    background:     -ms-linear-gradient(top,#505050,#1b1b1b);
+    background:      -o-linear-gradient(top,#505050,#1b1b1b);
 }
 
 
