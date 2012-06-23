@@ -6,12 +6,13 @@
 
 **Diary** is a simple calendar for personal use, nothing fancy, 
 just a way to save a list of activities, tasks or whatever stuff 
-you have done on a daily basis. It can be used as a calendar for 
-appointments, to-do or to-done list to keep track of your daily 
-achievements.
+you will do or have done on a daily basis. It can be used as a 
+calendar for appointments, to-do or to-done list to keep track 
+of your daily achievements.
 
-Personally I use it to keep track of what I have done today in my 
-computer, bugs fixed, programs coded or to sketch ideas.
+Personally, I use it to keep track of what I have done today in my 
+computer, bugs fixed, programs coded or to sketch ideas and keep 
+track of progress.
 
 
 
