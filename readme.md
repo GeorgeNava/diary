@@ -23,6 +23,8 @@ The whole app is just one html page, with one stylesheet and one script.
 It also uses a basic python controller and a python api to manage data.
 You can use any database you want, mysql, mongo or even appengine datastore.
 
+http://georgenava.appspot.com/demo/diary/diaryx.png
+
 
 
 ### Installation
