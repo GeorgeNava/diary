@@ -2,7 +2,6 @@
 
 ## A personal calendar
 
-* * * * *
 
 **Diary** is a simple calendar for personal use, nothing fancy, 
 just a way to save a list of activities, tasks or whatever stuff 
@@ -13,6 +12,8 @@ of your daily achievements.
 Personally, I use it to keep track of what I have done today in my 
 computer, bugs fixed, programs coded or to sketch ideas and keep 
 track of progress.
+
+Take a look here:  http://diary-georgenava.rhcloud.com
 
 
 
